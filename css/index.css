@@ -321,7 +321,7 @@ h2 {
         position: relative;
         width: 100%;
         height: 304px;
-        background-image: url(/расходники/phone_hat_img.jpg);
+        background-image: url(../расходники/phone_hat_img.jpg);
         background-size: cover;
         background-position: 50%;
         background-repeat: no-repeat;
