@@ -39,44 +39,41 @@
     margin-top: 90px;
  }
 
- .all_projects {
+.all_projects{
     margin-bottom: 150px;
-    margin-top: 150px;
     margin-top: 90px;
-    display: block;
     width: 1150px;
     height: 153px;
-    text-align: center;
-    padding-top: 56px;
-    padding-bottom: 56px;
+    flex-shrink: 0;
     border-radius: 5px;
     border: 1px solid var(--accent, #AD1818);
-    cursor: pointer;
-    pointer-events: auto;
+    background-color: white;
+
 }
 
-.all_projects_txt {
-    padding-left: 125px;
+.all_projects_txt{
+    
     color: var(--accent, #AD1818);
     text-align: center;
-    text-decoration: none;
     font-family: Manrope;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.9px;
- }
-
- .all_projects:hover {
-    background-color: #AD1818;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
-.all_projects_txt:hover .all_projects {
+.all_projects_txt:hover{
+    background-color: #AD1818;
     color: white;
 }
-
-
 
 @media (max-width: 1199px) {
 
@@ -124,19 +121,11 @@
 
 
      .all_projects {
-        margin-bottom: 103px;
-        margin-top: 102px;
-        margin-left: 0px;
-        display: block;
+        margin-bottom: 100px;
+        margin-top: 100px;
         width: 100%;
         height: 153px;
-        text-align: center;
-        padding-top: 56px;
-        padding-bottom: 56px;
-        border-radius: 5px;
-        border: 1px solid var(--accent, #AD1818);
-        cursor: pointer;
-        pointer-events: auto;
+
     }
     
 }
@@ -186,21 +175,12 @@
  }
 
  .all_projects {
+    height: 100px;
     margin-bottom: 80px;
     margin-top: 60px;
-    margin-left: 0px;
-    display: block;
-    width: 100%;
-    height: 100px;
-    padding-top: 37px;
-    padding-bottom: 37px;
-    border-radius: 3.802px;
-    border: 0.76px solid var(--accent, #AD1818);
 }
 
 .all_projects_txt {
-    padding-left: 125px;
-    text-decoration: none;
     font-size: 22px;
     letter-spacing: -0.66px;
 }
