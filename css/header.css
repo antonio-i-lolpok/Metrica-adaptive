@@ -1,0 +1,184 @@
+.body_fixe{
+    overflow: hidden;
+}
+
+.navigation {
+    padding-top: 33px;
+}
+
+.logo_link {
+    display: inline-block;
+    width: auto;
+    
+}
+
+.navigation_container{
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    gap: 60px;
+}
+
+.nav_link_txt {
+    text-decoration: none; 
+    color: #121212;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.54px;
+    text-transform: uppercase;
+}
+
+.nav_link_txt:first-child {
+    margin-left: 0px;
+}
+
+.nav_link_txt:hover {
+    text-decoration: underline;
+    color: #121212;;
+    opacity: 0.5;
+}
+
+.burger-btn{
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+
+
+
+@media (max-width: 1199px) {
+    .nav{
+        display: none;
+    }
+
+    .burger-btn {
+        
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 100;
+        display: block;
+        width: 50px;
+        height: 100%;
+        background-image: url("../расходники/burger_to_line.png");
+        background-position: 50%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+    }
+
+
+
+
+    .burger{
+        z-index: 4;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        background-color: rgba(0, 0, 0, 0.9);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease;
+    }
+    
+    .burger_open{
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .burger__content{
+        width: 274px;
+        height: 100%;
+        background-color: white;
+    }
+
+    .burger-btn_open{
+        display: block;
+        width: 34px;
+        background-image: url(../расходники/navigation_cross.png);
+    }
+
+    .burger_container{
+        width: 100%;
+        
+    }
+
+    .burger_container_nav{
+        padding-left: 30px;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .burger_logo_link{
+        margin-top: 80px;
+        margin-bottom: 30px;
+        width: auto;
+        flex-shrink: 0;
+    }
+
+    .nav_link_txt_burger{
+        width: auto;
+        color: #000;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.75px;
+        text-transform: uppercase;
+    }
+
+    .burger_container_for_communication{
+        margin-top: 90px;
+        margin-left: 33px;
+    }
+
+    .burger_contact{
+        width: auto;
+    }
+
+    .burger_container_nav_h3{
+        color: #000;
+        font-family: Manrope;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.48px;
+        opacity: 0.5;
+    }
+    .burger_phone_number{
+        color: var(--text, #121212);
+        font-family: Manrope;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 45.621px; /* 228.103% */
+        letter-spacing: -0.6px;
+        text-transform: uppercase;
+    }
+
+    .burger_mail{
+        color: var(--text, #121212);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -0.6px;
+    }
+
+}
